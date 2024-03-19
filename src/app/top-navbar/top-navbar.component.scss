@@ -1,0 +1,99 @@
+
+.top-navbar a ,span{
+    color: aliceblue;
+    margin: 5px;
+
+    
+}
+
+.top-navbar {
+    background-color: black;}
+
+button.donate{
+    width: 150px;
+    height: 30px;
+    background-color: rgb(185, 135, 10);
+    color: aliceblue;
+}
+
+button.volunteer{
+    width: 200px;
+    height: 30px;
+    background-color: rgb(185, 135, 10);
+    color: aliceblue;
+
+}
+
+.top-navbar {
+    background-color: #343a40;
+   
+}
+
+.contactinfo a, span {
+    text-decoration: none;
+}
+
+.location a , span {
+    text-decoration: none;
+}
+
+.contactinfo  a:hover {
+    color: orange;
+}
+
+.location a:hover {
+    color: orange;
+}
+
+
+.contactdetails {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contactinfo,
+.location,
+.social,
+.btn-group {
+    margin-bottom: 10px;
+}
+
+.social a {
+    margin-right: 10px;
+    margin-left: 10px;
+    color: aliceblue;
+
+}
+
+.social a:hover {
+    color: orange;
+}
+
+.social a:not(:last-child)::after {
+    content: "|";
+    margin-left: 10px;
+    color: aliceblue;
+}
+.btn-group {
+    margin-left: 70px;
+}
+
+
+
+@media (max-width: 768px) {
+    .contactdetails {
+        flex-direction: column;
+    }
+
+    .btn-group {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    .social a:not(:last-child)::after {
+        content: "";
+        margin-left: 0;
+    }
+}
