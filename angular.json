@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Atramenti-ng:build:production"
+              "buildTarget": "Atramenti-ng:build:production"
             },
             "development": {
-              "browserTarget": "Atramenti-ng:build:development"
+              "buildTarget": "Atramenti-ng:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Atramenti-ng:build"
+            "buildTarget": "Atramenti-ng:build"
           }
         },
         "test": {
@@ -100,5 +100,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "bd55613b-c28b-470c-9278-811cb5586f7e"
   }
 }
